@@ -10,14 +10,14 @@
             <div class="collapse navbar-collapse" id="navbars-host">
                 <ul class="navbar-nav ms-auto">       
 
-                    <li class="nav-item"><a class="nav-link" href="{% url 'pizzas' %}">Pizzas</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'pizzas' %}">Ürün Çeşitlerimiz</a></li>
                     
                     {% if user.is_authenticated %}
-                    <li class="nav-item"><a class="nav-link" href="{% url 'my_orders' %}">My Orders</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'user_logout' %}">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'my_orders' %}">Siparişlerim</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'user_logout' %}">Çikiş Yap</a></li>
                     {% else %}
-                        <li class="nav-item"><a class="nav-link" href="{% url 'user_login' %}">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'register' %}">Register</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'user_login' %}">Giriş Yap</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'register' %}">Kayit Ol</a></li>
                     {% endif %}
 
                 </ul>
