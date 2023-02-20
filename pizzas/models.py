@@ -33,18 +33,13 @@ class Order(models.Model):
     def __str__(self):
         return f"{self.user.username} ordered {self.pizza.name}"
 class Sales(models.Model):
-    pizza = models.ForeignKey(Pizza, on_delete=models.CASCADE)
     name=models.CharField(max_length=32)
     surname=models.CharField(max_length=32)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     phone=models.CharField(max_length=32)
-    address=models.CharField(max_length=32)
-    quantity = models.IntegerField(default=1)
-    price=models.DecimalField(
-     max_digits=7,
-     decimal_places=2
-    )
+    address=models.CharField(max_length=100)
     
+   
     def __str__(self):
         return f"{self.name} ordered {self.surname}"    
 

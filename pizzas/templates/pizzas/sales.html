@@ -2,6 +2,17 @@
 
 
 {% block content %}
-    <h1>dsdsd </h1>
+
+ <div>
+       <form action="" method="POST">
+       {% csrf_token %}
+       {{form}}
+      <input type="submit" value="order" class="btn btn-primary" >
+       <br>
+ </div>
+ 
+ 
+  <br> <br>
+</form>
 {% endblock content %}
     

@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Pizza, Order
-from .forms import PizzaForm
+from .forms import PizzaForm,SalesForm
 
 def home(request):
     return render(request, 'pizzas/home.html')
@@ -63,4 +63,15 @@ def delete_order_view(request, id):
     return redirect('my_orders')
 
 def  sales_view(request):
-    return render(request, 'pizzas/sales.html')
+    form = SalesForm(request.POST or None)
+    if request.method == 'POST':
+        if form.is_valid():
+         sales = form.save(commit=False)
+         sales.user = request.user
+         sales.save()
+         return redirect('home')
+              
+    context = {
+    "form" : form
+    }
+    return render(request, 'pizzas/sales.html',context)
