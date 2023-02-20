@@ -61,3 +61,6 @@ def delete_order_view(request, id):
     order = Order.objects.get(id=id)
     order.delete()
     return redirect('my_orders')
+
+def  sales_view(request):
+    return render(request, 'pizzas/sales.html')
