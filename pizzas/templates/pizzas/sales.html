@@ -7,6 +7,8 @@
        <form action="" method="POST">
        {% csrf_token %}
        {{form}}
+       <br>
+       <p>Toplam Fiyat: {{ total_price }} </p>
       <input type="submit" value="order" class="btn btn-primary" >
        <br>
  </div>

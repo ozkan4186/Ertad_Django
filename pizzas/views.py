@@ -64,14 +64,20 @@ def delete_order_view(request, id):
 
 def  sales_view(request):
     form = SalesForm(request.POST or None)
+    orders=Order.objects.filter(user=request.user)
+    total_price=0
     if request.method == 'POST':
         if form.is_valid():
          sales = form.save(commit=False)
          sales.user = request.user
          sales.save()
          return redirect('home')
+    for order in orders:
+        total_price += order.pizza.price * order.quantity    
+        
               
     context = {
-    "form" : form
+    "form" : form,
+    "total_price":total_price
     }
     return render(request, 'pizzas/sales.html',context)
