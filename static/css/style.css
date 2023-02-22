@@ -37,10 +37,10 @@
     position: absolute;
     font-size: 5rem;
     color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* text-align: center; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     top: 30rem ;
     z-index: 10;
     left: 30%;
@@ -73,6 +73,8 @@
         padding: 3rem;
       }
 }
+
+
 
 
 

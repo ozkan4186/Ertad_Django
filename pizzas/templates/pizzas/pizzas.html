@@ -4,7 +4,7 @@
 {% block content %}
 
 
-<div class="d-flex justify-content-around flex-wrap mt-5">
+<div class="d-flex justify-content-around flex-wrap mt-5" style="margin-bottom: 9rem;">
    
     {% for pizza in pizzas %}
     <div class="card m-5 shadow" style="max-width: 500px;">
@@ -27,7 +27,7 @@
              </p>
              
              {% if user.is_authenticated %}
-             <p class="card-text"><a href="{% url 'order' pizza.id %}"><button class=" btn btn-warning ms-1">Sepete Ekle</button></a></p>
+             <p class="card-text"  ><a href="{% url 'order' pizza.id %}"><button class=" btn btn-warning ms-1">Sepete Ekle</button></a></p>
              {% endif %}
                 
             </div>

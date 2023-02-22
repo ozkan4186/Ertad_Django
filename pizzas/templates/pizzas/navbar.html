@@ -10,14 +10,14 @@
             <div class="collapse navbar-collapse" id="navbars-host">
                 <ul class="navbar-nav ms-auto">       
 
-                    <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'pizzas' %}">Ürün Çeşitlerimiz</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold  " href="{% url 'pizzas' %}">ÜRÜN ÇEŞİTLERİMİZ</a></li>
                     
                     {% if user.is_authenticated %}
-                    <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'my_orders' %}">Siparişlerim</a></li>
-                        <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'user_logout' %}">Çikiş Yap</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold  " href="{% url 'my_orders' %}">SİPARİŞLERİM</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold  " href="{% url 'user_logout' %}">ÇIKIŞ YAP</a></li>
                     {% else %}
-                        <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'user_login' %}">Giriş Yap</a></li>
-                        <li class="nav-item"><a class="nav-link text-danger fs-3 " href="{% url 'register' %}">Kayit Ol</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold  " href="{% url 'user_login' %}">GİRİŞ YAP</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold " href="{% url 'register' %}">KAYIT OL</a></li>
                     {% endif %}
 
                 </ul>

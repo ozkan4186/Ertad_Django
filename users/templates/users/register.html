@@ -3,16 +3,16 @@
 
 
 {% block content %}
-<div class="col-lg-4 mx-auto p-0 shadow mt-5">
+<div class="col-lg-4 mx-auto p-0 shadow mt-5"style="margin-bottom: 3rem;">
     <div class="alert alert-warning text-center p-1">
-        <h2>Registration</h2>
+        <h2>Kayit Formu</h2>
     </div>
     <div class="p-4 d-flex align-items-center ">
         <form action="" method="POST">
             {% csrf_token %} 
             {{ form }}
             <hr>
-            <input type="submit" value="Register" class="btn btn-success">
+            <input type="submit" value="Kayit Ol" class="btn btn-success">
         </form>
     </div>
 </div>

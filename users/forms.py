@@ -12,19 +12,19 @@ class UserForm(UserCreationForm):
     
     username = UsernameField(
         label=(""),
-        widget=forms.TextInput(attrs={"autofocus": True,'class' : "rounded border border-warning form-control shadow-lg m-2", "placeHolder" :"username"})
+        widget=forms.TextInput(attrs={"autofocus": True,'class' : "rounded border border-warning form-control shadow-lg m-2", "placeHolder" :"kullanici ismi"})
         )
     
     password1 = forms.CharField(
         label=(""),
-        widget=forms.PasswordInput(attrs={'class' : "rounded border border-warning form-control shadow-lg m-2", "placeHolder" :"password"}),
+        widget=forms.PasswordInput(attrs={'class' : "rounded border border-warning form-control shadow-lg m-2", "placeHolder" :"şifre"}),
         help_text=password_validation.password_validators_help_text_html(),
     )
     
     password2 = forms.CharField(
         label=(""),
-        widget=forms.PasswordInput(attrs={'class' : "rounded border border-warning form-control shadow-lg m-2", "placeHolder" :"Password confirmation"}),
-        help_text=("* Enter the same password as before, for verification."),
+        widget=forms.PasswordInput(attrs={'class' : "rounded border border-warning form-control shadow-lg m-2", "placeHolder" :"Şifreyi Doğrula"}),
+        help_text=("* Doğrulama için öncelikle ayni parolayi girin"),
     )
 
 class LoginForm(AuthenticationForm):
