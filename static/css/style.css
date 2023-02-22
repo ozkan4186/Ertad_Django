@@ -1,28 +1,90 @@
 .navbar {
-    background-color: rgb(209,230,222);
+  background-color: rgb(209, 230, 222);
+ 
+
+ 
 }
 
 .homeImage {
-    background-image: url('../images/böreks.jpg');
-    height: calc(100vh - 106px);
-    background-size: cover;
-    background-position: center;
+  background-image: url('https://i2.milimaj.com/i/milliyet/75/0x410/5ec6865c55427f02207cc3c3.jpg');
+  height: calc(100vh - 106px);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: 0.8;
 }
 
 #warning {
-    margin-top: 5px;
-    background-color: lightcoral;
-    color: aliceblue;
-    margin: auto;
-    height: 40px;
-    text-align: center;
+  margin-top: 5px;
+  background-color: lightcoral;
+  color: aliceblue;
+  margin: auto;
+  height: 40px;
+  text-align: center;
 }
 
 #success {
-    margin-top: 5px;
-    background-color: darkseagreen ;
-    color:rgb(231, 200, 158);
-    margin: auto;
-    height: 40px;
-    text-align: center;
+  margin-top: 5px;
+  background-color: darkseagreen;
+  color: rgb(231, 200, 158);
+  margin:  auto;
+  height: 40px;
+  text-align: center;
 }
+
+.borek{
+    font-family: fantasy;
+    position: absolute;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30rem ;
+    z-index: 10;
+    left: 30%;
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    border: 1px solid white;
+    box-shadow: 3, 3, 10px, rgb(209, 134, 134);
+    letter-spacing: 5px;
+}
+
+
+@media screen  and (max-width: 1450px){
+    .borek {
+        font-size: 3rem;
+      }
+}
+@media screen  and (max-width: 800px){
+    .borek {
+        font-size: 2rem;
+        margin: 3rem;
+        padding: 3rem;
+      }
+}
+@media screen  and (max-width: 600px){
+    .borek {
+        font-size: 1rem;
+        margin: 2rem ;
+        padding: 3rem;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
