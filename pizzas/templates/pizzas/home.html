@@ -4,23 +4,40 @@
 
 {% block content %}
  
+    <div class=" homeImage d-flex justify-content-center align-items-center  " >
 
-    <div class="homeImage">
-        {% if messages %} 
-        {% for message in messages %} 
-            {% if message.tags == "warning" %}
-                <div id="warning" class="message rounded col-md-2">{{ message }}</div>
-            {% else %}
-                <div id="success" class="message rounded col-md-2">{{ message }}</div>
-            {% endif %} 
-        {% endfor %} 
-        {% endif %}
+         <div >
+     {% if messages %} 
+     {% for message in messages %} 
+         {% if message.tags == "warning" %}
+             <div id="warning" class="message rounded col-md-2">{{ message }}</div>
+         {% else %}
+             <div id="success" class="message rounded col-md-2">{{ message }}</div>
+         {% endif %} 
+     {% endfor %} 
+     {% endif %}
+ </div>
+ <div>
+     <h1 class="borek" >ERTAD BÖREKÇİLİK</h1>
+ </div>
 
     </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 
-    <div>
-        <h1 class="borek" >ERTAD BÖREKÇİLİK</h1>
-    </div>
+   
+
+   
+   
+   
 
 {% endblock content %}
     

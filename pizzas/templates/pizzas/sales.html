@@ -4,12 +4,12 @@
 {% block content %}
 
  <div>
-       <form action="" method="POST">
+       <form action="" method="POST" class="text-center " style="border: 2;" >
        {% csrf_token %}
        {{form}}
        <br>
        <p class="text-center" >Toplam Fiyat: {{ total_price }} </p>
-      <input type="submit" value="Siparişi Tamamla" class=" btn btn-primary  "  style="margin-bottom: 11rem;";  >
+      <input type="submit" value="Siparişi Tamamla" class=" btn btn-primary m-auto  "  style="margin-bottom: 20rem;";  >
        <br>
  </div>
  

@@ -26,7 +26,7 @@ class SalesForm(forms.ModelForm):
         )
         widgets = {
          
-          'name': forms.TextInput(attrs={'class' : "rounded text-center justify-content-center border border-warning form-control", "style" : "width: 50%,margin:5rem auto "}),
-           'surname': forms.TextInput(attrs={'class' : "rounded   text-center border border-warning form-control", "style" : "width: 50%;"}),          
-          'phone': forms.TextInput(attrs={'class' : "rounded text-center border border-warning form-control", "style" : "width: 50%;"}),          
-          'address': forms.TextInput(attrs={'class' : "rounded text-center border border-warning form-control", "style" : "width: 50%;"}),}       
+          'name': forms.TextInput(attrs={'class' : "rounded m-auto text-center justify-content-center border border-danger form-control", "style" : "width: 50% "}),
+           'surname': forms.TextInput(attrs={'class' : "rounded  m-auto    text-center border border-danger form-control", "style" : "width: 50%;"}),          
+          'phone': forms.TextInput(attrs={'class' : "rounded m-auto  text-center border border-danger form-control", "style" : "width: 50%;"}),          
+          'address': forms.TextInput(attrs={'class' : "rounded m-auto  text-center border border-danger form-control", "style" : "width: 50%;"}),}       
