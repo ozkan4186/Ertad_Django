@@ -1,25 +1,57 @@
 {% load static %}
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+       <img src="{% static 'images/home.png' %}" alt="Hi!" width="120" height="80" class="rounded" ></a>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="{% url 'pizzas' %}">ÜRÜN ÇEŞİTLERİMİZ<span class="sr-only">(current)</span></a>
+          {% if user.is_authenticated %}
+      <a class="nav-item nav-link" href="{% url 'my_orders' %}">SİPARİŞLERİM</a>
+      <a class="nav-item nav-link" href="{% url 'user_logout' %}">ÇIKIŞ YAP</a>
+         {% else %} 
+      <a class="nav-item nav-link " href="{% url 'user_login' %}">GİRİŞ YAP</a>
+      <a class="nav-item nav-link " href="{% url 'register' %}">KAYIT OL</a>
+        {% endif %}
+    </div>
+  </div>
+</nav>
 
-    <!-- navabar start -->
-    <nav class="navbar navbar-expand-lg navbar navbar-white">
-        <div class="container-fluid ">
-            <a class="navbar-brand alert-warning" href="/">
-            <img src="{% static 'images/home.png' %}" alt="Hi!" width="120" height="80" class="rounded" ></a>
-            
-            <div class="collapse navbar-collapse" id="navbars-host">
-                <ul class="navbar-nav ms-auto">       
 
-                    <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold  " href="{% url 'pizzas' %}">ÜRÜN ÇEŞİTLERİMİZ</a></li>
-                    
-                    {% if user.is_authenticated %}
-                    <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold  " href="{% url 'my_orders' %}">SİPARİŞLERİM</a></li>
-                        <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold  " href="{% url 'user_logout' %}">ÇIKIŞ YAP</a></li>
-                    {% else %}
-                        <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold  " href="{% url 'user_login' %}">GİRİŞ YAP</a></li>
-                        <li class="nav-item"><a class="nav-link text-danger fs-3 fw-bold " href="{% url 'register' %}">KAYIT OL</a></li>
-                    {% endif %}
 
-                </ul>
-            </div>
-    </nav>
+
+
+
+
+
+
+
+ 
+   
+   
+   
+   
+   
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+   
+   

@@ -1,12 +1,9 @@
 .navbar {
   background-color: rgb(209, 230, 222);
- 
-
- 
 }
 
 .homeImage {
-  background-image: url('https://i2.milimaj.com/i/milliyet/75/0x410/5ec6865c55427f02207cc3c3.jpg');
+  background-image: url("https://i2.milimaj.com/i/milliyet/75/0x410/5ec6865c55427f02207cc3c3.jpg");
   height: calc(100vh - 106px);
   background-size: cover;
   background-position: center;
@@ -15,7 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: "100vh",
+  height: "100vh";
+  margin-bottom: 2rem;
 }
 
 #warning {
@@ -31,82 +29,65 @@
   margin-top: 5px;
   background-color: darkseagreen;
   color: rgb(231, 200, 158);
-  margin:  auto;
+  margin: auto;
   height: 40px;
   text-align: center;
 }
 
-.borek{
-    font-family: fantasy;
-    font-size: 5rem;
-    color: white; 
-    /* transform: translate(-50%, -50%); */
-    z-index: 10;
-    margin: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50px;
-    padding: 10px;
-    border: 1px solid white;
-    box-shadow: 3, 3, 10px, rgb(209, 134, 134);
-    letter-spacing: 5px;
-}
-
-
-@media screen  and (max-width: 1450px){
-    .borek {
-        font-size: 3rem;
-      }
-}
-@media screen  and (max-width: 800px){
-    .borek {
-        font-size: 2rem;
-        margin: 3rem;
-        padding: 3rem;
-      }
-}
-@media screen  and (max-width: 600px){
-    .borek {
-        font-size: 0.2rem;
-        margin: 0;
-        padding: 10rem;
-
-      }
+.borek {
+  font-family: fantasy;
+  font-size: 5rem;
+  color: white;
+  /* transform: translate(-50%, -50%); */
+  z-index: 10;
+  margin: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  padding: 2rem;
+  border: 1px solid white;
+  box-shadow: 3, 3, 10px, rgb(209, 134, 134);
+  letter-spacing: 5px;
 }
 
 
 
+@media screen and (min-width: 992px) {
+ .img{
+   height: 12rem;
 
+ }
+}
 
+@media screen and (max-width: 1450px) {
+  .borek {
+    font-size: 3rem;
+  }
+  .homeImage {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .borek {
+    font-size: 2rem;
+    margin: 3rem;
+    padding: 2rem;
+  }
+  .homeImage {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .borek {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 1.5rem;
+  }
+  .homeImage {
+    height: 50vh;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-.footer{
+/* .footer {
   position: fixed;
   bottom: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
